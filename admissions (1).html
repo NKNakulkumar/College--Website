@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Admissions Details | Teerthanker Mahaveer University</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: rgba(240, 79, 10, 0.867);
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #0a0202;
+		}
+
+		nav li {
+			float: left;
+		}
+
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav li a:hover {
+			background-color: #6af931bc;
+		}
+
+		h2 {
+			color: #f0480b;
+			background-color: #94929263;
+			padding: 10px;
+			margin-top: 20px;
+
+		}
+
+		h3 {
+			width: 93%;
+			color: #ff7200;
+			background-color: #070000;
+			padding: 10px;
+			margin-top: -15px;
+			text-align: center;
+			border-left-style: double;
+			border-right-style: double;
+		}
+
+		ul li {
+			font-size: 18px;
+		}
+
+		.form {
+			width: 20vw;
+			height: 68vh;
+			background: linear-gradient(to top, rgba(240, 72, 11, 1)50%, rgba(240, 72, 11, 1)50%);
+			position: absolute;
+			left: 50px;
+			transform: translate(0%, -5%);
+			border-radius: 33px;
+			padding: 61px;
+			left: 33%;
+			margin-top: 8vh;
+		}
+
+		.form input {
+			width: 20vw;
+			height: 35px;
+			background: #fff;
+			border-bottom: 1px solid #ff7200;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			color: #070000;
+			font-size: 15px;
+			letter-spacing: 1px;
+			margin-top: 10px;
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		
+
+		.btnn {
+			width: 240px;
+			height: 40px;
+			background: rgb(240 72 11);
+			border: none;
+			margin-top: 30px;
+			font-size: 18px;
+			border-radius: 10px;
+			cursor: pointer;
+			color: #fff;
+			transition: 0.4s ease;
+		}
+		.btnn a{
+			color: black;
+		}
+
+		.btnn:hover {
+		color: orange;
+		background: #fff;
+		}
+		.fa-solid,
+		.fas {
+			font-weight: 900;
+			padding-right: 9px;
+		}
+
+		.footer {
+			position: static;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: red;
+			color: white;
+			text-align: center;
+			margin-top: 95vh;
+			font-size: 14px;
+			font-weight: bold;
+			font-family: "Open Sans", Arial, sans-serif;
+		}
+
+		a {
+			
+			text-decoration: auto;
+			color: white;
+		}
+
+		a:hover {
+			color: black;
+			
+		}
+	
+		#program {
+			width: 102%;
+			color: #ff7200;
+			background-color: #070000;
+			padding: 10px;
+			margin-top: 10px;
+			text-align: center;
+			border-left-style: double;
+			border-right-style: double;
+		}
+
+		p {
+			text-align: center;
+			padding-right: 31px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+		<nav>
+			<ul>
+				<li><a href="Tmureal1.html">Home</a></li>
+                    <li><a href="Aboutcollege.html">Aboutcollege</a></li>
+                    <li><a href="admissions (1).html">Addmission</a></li>
+                    <li><a href="placement.html">Placement</a></li>
+                    <li><a href="contact (1).html">Contact</a></li>
+
+			</ul>
+		</nav>
+		<img src="Images.jpg\NIC.jpg" width="200px" height="170px" style="margin-top: 4vh;">
+		<h1>Admissions Details</h1>
+	</header>
+	<main>
+		<h2>Undergraduate Programs</h2>
+		<ul>
+			<li>Bachelor of Computer Applications (BCA)</li>
+			<li>Bachelor of Technology (B.Tech)</li>
+			<li>Bachelor of Science (B.Sc)</li>
+			<li>Bachelor of Commerce (B.Com)</li>
+		</ul>
+		<h2>Graduate Programs</h2>
+		<ul>
+			<li>Master of Computer Applications (MCA)</li>
+			<li>Master of Technology (M.Tech)</li>
+			<li>Master of Science (M.Sc)</li>
+			<li>Master of Commerce (M.Com)</li>
+		</ul>
+		<h2>Admission Form :</h2>
+		<p>Fill out the admission form below to apply for a program:</p>
+		<div class="form">
+			<h3>Admission Form</h3>
+			<input type="email" name="email" placeholder="Enter Email Here"> <br>
+			<input type="password" name="" placeholder="Enter Password Here"><br>
+			<input type="Message" name="" placeholder="Enter a message"><br>
+			<!-- <label for="program">program:</label> -->
+			<select name="program" id="program"> <br>
+				<option value="program">program</option>
+				<option value="BCA">BCA</option>
+				<option value="BSC">BSC</option>
+				<option value="MCA">MCA</option>
+				<option value="B.Tech">B.Tech</option>
+			</select><br>
+			<input type="board" name="" placeholder="Board/University"> <br>
+			<input type="number" id="Marks" name="Marks" placeholder="Obtained Marks" min="0" max="100"><br>
+			<button class="btnn"><a href="#"> Submit</a></button>
+			<p class="link"><br>
+				<a href="#">Sign up </a> Here
+			</p>
+		</div>
+	</main>
+	<div class="footer">
+		<a href="https://www.nakul.org/about/">About Us</a>|
+		<a href="https://www.nakul.org/privacy-policy/">privacy-policy</a>|
+		<a href="https://www.nakul.org/carrers/">careers</a>|
+		<p>© Teerthanker Mahaveer University. All Rights Reserved.</p>
+	</div>
+</body>
+
+</html>
