@@ -22,6 +22,7 @@ a {
     padding: 10px 20px;
     background-color: #333;
     color: white;
+    flex-wrap: wrap;
 }
 
 .navbar .logo img {
@@ -31,6 +32,8 @@ a {
 .navbar .menu ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .navbar .menu ul li {
@@ -139,7 +142,7 @@ hr {
     color: white;
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .navbar .menu ul {
         display: block;
@@ -152,14 +155,17 @@ hr {
 
     .section, .section-left {
         flex-direction: column;
+        align-items: center;
     }
 
     .section .paras, .section-left .paras, .thumbnail {
         max-width: 100%;
+        text-align: center;
     }
 
     .thumbnail img {
-        width: 80%;
+        width: 90%;
+        height: auto;
     }
 
     .content h1 {
@@ -173,26 +179,35 @@ hr {
     .footer {
         font-size: 14px;
     }
+
+    .content .btnn {
+        padding: 10px 15px;
+    }
+
+    .navbar .logo img {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .navbar .logo img {
-        width: 100px;
+        width: 80px;
     }
 
     .content h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .content .par {
         font-size: 14px;
     }
 
-    .btnn {
-        padding: 8px 16px;
-    }
-
     .footer {
         font-size: 12px;
     }
+
+    .content .btnn {
+        padding: 8px 16px;
+    }
 }
+
