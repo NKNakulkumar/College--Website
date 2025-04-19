@@ -15,7 +15,7 @@ Welcome to the College Website project! This is a multipage website designed to 
 
 ## Screenshots
 
-![App Screenshot](https://nknakulkumar.github.io/College--Website/Images.jpg/OIP.jpg)
+![App Screenshot](https://i.pinimg.com/originals/fa/a2/ce/faa2ceedb89acc66b807280a0cbd4be9.jpg)
 
 
 ## Tech Stack
