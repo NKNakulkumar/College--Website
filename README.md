@@ -13,11 +13,6 @@ Welcome to the College Website project! This is a multipage website designed to 
 - Multiple tabs to more about it 
 
 
-## Screenshots
-
-![App Screenshot](https://nknakulkumar.github.io/College--Website/)
-
-
 ## Tech Stack
 
 **Client:** HTML,CSS
