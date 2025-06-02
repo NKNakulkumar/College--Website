@@ -9,7 +9,7 @@ Welcome to the College Website project! This is a multipage website designed to 
 - Interactive design 
 - Live previews
 - Fullscreen mode
-- Multiple tabs to more about it 
+- Multiple tabs to more about this application
 
 
 ## Screenshots
