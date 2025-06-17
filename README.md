@@ -21,6 +21,8 @@ Welcome to the College Website project! This is a multipage website designed to 
 
 **Client:** HTML,CSS
 
+## Demo
+link - https://nknakulkumar.github.io/College--Website/
 
 ## Contributing
 
