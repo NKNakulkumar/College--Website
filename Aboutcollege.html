@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMU about page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .masthead {
+        padding: 2rem 0 5rem;
+        position: relative;
+        background-color: #ff8c00;
+        background-image: url(), linear-gradient(45deg, #F39C12 0%, #E67E22 100%);
+        background-size: cover;
+        z-index: 0;
+    }
+
+
+    .container1 {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-md-5 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #carbonads {
+        padding: 1rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        line-height: 3rem;
+        background-color: rgba(248, 249, 250, .15);
+        box-shadow: 0 0 1rem 0.5rem rgba(33, 37, 41, .1);
+    }
+
+    .page-top ul.breadcrumb {
+        background: none;
+        margin: -3px 0 0;
+        padding: 0;
+    }
+
+    .page-top ul.breadcrumb>li {
+        text-shadow: none;
+    }
+
+    .breadcrumb>li {
+        display: inline-block;
+    }
+
+    li {
+        line-height: 24px;
+    }
+
+    .masthead a {
+        color: rgba(255, 255, 255, .8);
+        z-index: 1;
+    }
+
+    body a {
+        outline: none !important;
+    }
+
+    a {
+        color: #ff8c00;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    .page-top ul.breadcrumb>li {
+        text-shadow: none;
+    }
+
+    .breadcrumb>li {
+        display: inline-block;
+    }
+
+    li {
+        line-height: 24px;
+    }
+
+    .breadcrumb>li+li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0";
+    }
+
+    .masthead a {
+        color: rgba(255, 255, 255, .8);
+        z-index: 3;
+
+    }
+
+    body a {
+        outline: none !important;
+    }
+
+    a {
+        color: #fefbfb;
+        text-decoration: auto;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: rgb(3, 0, 0);
+    }
+
+    .page-top ul.breadcrumb>li {
+        text-shadow: none;
+    }
+
+    .breadcrumb>.active {
+        color: #777;
+    }
+
+    .breadcrumb>li {
+        display: inline-block;
+
+    }
+
+    li {
+        line-height: 24px;
+    }
+
+    .breadcrumb>li+li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0";
+
+    }
+
+    .heading3 {
+        font-size: 2.2em;
+        font-weight: 300;
+        line-height: 42px;
+        margin: -5px 0px 32px 0px;
+        text-align: center;
+        flex: auto;
+        padding: 1rem;
+        font-size: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 3px solid white;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-right: 18%;
+        box-shadow: 0 5px 11px 0 rgba(237, 170, 12, 0.954), 0 4px 15px 0 rgba(239, 191, 33, 0.15);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+    .para {
+        color: red;
+        font-size: 30px;
+        font-family: 'Caveat', cursive;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 80%;
+        margin: auto;
+        padding-right: 20px;
+
+    }
+
+    .paras {
+        font-size: 25px;
+        font-family: 'Caveat', cursive;
+        font-family: 'Varela Round', sans-serif;
+        justify-content: center;
+        margin: 0px 30px 10px 30px;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-md-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-md-4 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .feature-box {
+        clear: both;
+    }
+
+    .feature-box .feature-box-icon {
+        background-color: #ff8c00;
+    }
+
+    .feature-box .feature-box-icon {
+        background: #fc6f03;
+        border-radius: 35px;
+        color: #fdfdfc;
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        margin-right: 10px;
+        position: relative;
+        text-align: center;
+        top: 5px;
+        width: 35px;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+
+    }
+
+    .fa-check:before {
+        content: "\f00c";
+    }
+
+    .feature-box-info {
+        /* padding-left: 50px; */
+        margin: 0px 50px 31px;
+    }
+
+    h4 {
+        color: #f55e06;
+        font-size: 1.4em;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 27px;
+        margin: 0 0 14px 0;
+    }
+
+    p.tall {
+        margin-bottom: 20px;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 55px;
+    }
+
+    .col-md-6 h4 {
+        margin: 40px 0 0 0;
+        text-align: left;
+        color: #f50909;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .sky-tabs {
+        position: relative;
+        font-size: 0;
+        text-align: left;
+        color: #666;
+
+    }
+
+    .sky-tabs,
+    .sky-tabs * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: 0;
+        background: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 4px 0 0;
+        margin-top: 1px \9;
+        line-height: normal;
+    }
+
+    .sky-tabs-pos-top-justify>input:first-child+label {
+        padding-left: 0;
+    }
+
+    .sky-tabs>input:checked+label {
+        cursor: default;
+    }
+
+    .sky-tabs-pos-top-justify.sky-tabs-amount-2>label {
+        width: 50%;
+    }
+
+    /* @media screen and (max-width: 767px) .sky-tabs-response-to-icons> {
+        font-size: 0;
+        text-align: center;
+    } */
+
+    .sky-tabs>label {
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #EEE;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 1px;
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 45px;
+        cursor: pointer;
+    }
+
+    .sky-tabs>label span {
+        display: block;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .sky-tabs>input:checked+label span span {
+        background: #2da5da;
+        color: #fff;
+    }
+
+    /* @media screen and (max-width: 767px) .sky-tabs-response-to-icons>label span span {
+        padding: 0;
+        padding-top: 10px;
+    } */
+
+    .sky-tabs>label span {
+        display: block;
+    }
+
+    [type=radio]:checked,
+    [type=radio]:not(:checked) {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .sky-tabs-pos-top-justify.sky-tabs-amount-2>label {
+        width: 50%;
+    }
+
+    /* @media screen and (max-width: 767px) .sky-tabs-response-to-icons>label {
+        font-size: 0;
+        text-align: center;
+    } */
+
+    .sky-tabs-pos-top-justify>label {
+        padding-right: 0;
+        padding-left: 1px;
+    }
+
+    .sky-tabs>label {
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #EEE;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 1px;
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 45px;
+        cursor: pointer;
+    }
+
+    label {
+        color: black;
+    }
+
+    .sky-tabs>label span {
+        display: block;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .sky-tabs>input:checked+label span span {
+        background: #2da5da;
+        color: #fff;
+    }
+
+    /* @media screen and (max-width: 767px) .sky-tabs-response-to-icons>label span span {
+        padding: 0;
+        padding-top: 10px;
+    } */
+
+    .typography p:first-child {
+        margin-top: 0;
+    }
+
+    .sky-tabs .typography h4 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .sky-tabs .typography h4 {
+        margin: 40px 0 0 0;
+        padding: 0;
+        text-align: left;
+        color: black;
+    }
+
+    .col-md-6 {
+        position: relative;
+        min-height: 1px;
+    }
+
+    .sky-tabs .typography li {
+        position: relative;
+        margin-top: 5px;
+        padding-left: 20px;
+        font-family: math;
+    }
+
+    .sky-tabs,
+    .sky-tabs * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: 0;
+        background: none;
+    }
+
+    .row::before {
+        display: table;
+        content: "";
+    }
+
+    li {
+        line-height: 24px;
+    }
+
+    .sky-tabs>ul {
+        border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #EEE;
+        list-style: none;
+        position: relative;
+        display: block;
+        font-size: 14px;
+    }
+
+    .sky-tabs .typography ul,
+    .sky-tabs .typography ol {
+        list-style: none;
+        margin: 20px 0 0 0;
+        padding: 0;
+        line-height: 18px;
+    }
+
+    [type=radio]:checked,
+    [type=radio]:not(:checked) {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .sky-tabs>input {
+        position: absolute;
+        display: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 4px 0 0;
+        margin-top: 1px \9;
+        line-height: normal;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    .footer {
+        position: absolute;
+        left: 0;
+        margin-bottom: 0px;
+        width: 100vw;
+        background-color: red;
+        color: white;
+        text-align: center;
+        margin-top: -2vh;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+</style>
+
+<body>
+    <section class=" page-top masthead masthead">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="carbonads">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a>
+                            </li>
+                            <li><a href="Aboutcollege.html">Aboutcollege</a>
+                            </li>
+                            <li><a href="admissions (1).html">Addmission</a>
+                            </li>
+                            <li><a href="placement.html">Placement</a>
+                            </li>
+                            <li><a href="contact (1).html">Contact</a>
+                            </li>
+
+                        </ul>
+                        <h3 style="font-family:Bebas Neue;margin:0;display:block;line-height:1.1;font-weight:400;font-size:35px;color:#fff"
+                            data-uw-rm-heading="level" role="heading" aria-level="2">About College</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="Images.jpg\Image_01.jpg" width="100%" height="700px">
+    <div class="heading3">
+        <h3> Welcome to College of Computer science & IT</h3>
+        "The"
+        <span class="para"> College of Computer science & IT
+        </span>"came into existence in the year 2014 (formerly known as Department of Computer Applications, established
+        in the year 2001)."
+    </div>
+    <p class="paras">The college was established by the university with the aim of providing relevant, essential and
+        upgraded education to the young aspirants in the field of computer science and engineering. The college is
+        geared up to meet the continuously increasing demand of skilled manpower, in the domain of Computer Science and
+        Engineering, because of the rapid technological advancements around the globe and major initiatives like
+        'Digital India' taken by the Government of India .
+
+        The College of Computing Sciences and Information Technology (CCSIT) is the center for all Computer Science
+        related programmes run by the university as per the standard UGC and AICTE norms.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="shorter"> journals</h4>
+                                <p class="tall" style="color: black;"> National: 20; International: 05</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="shorter"> College magzine</h4>
+                                <p class="tall" style="color: black;"> Computing Vision published quarterly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="shorter"> Student club</h4>
+                                <p class="tall" style="color: black;"> Techno, Creative, Cultural, Go Green and Sports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div></i>
+        </div>
+        <div class="feature-box-info">
+            <h4 class="shorter"> Major strength</h4>
+            <p class="tall" style="color: black;">
+            <ul>
+                <li>
+                    The participation of students is encouraged and ensured in various academic
+                    events that include Conferences, Seminars and Workshops each academic year as
+                    well as Group Discussion for their overall holistic development.</li>
+                <li>Guest Lectures and Invited Talks for Students and Faculty Members with reference
+                    to new challenges, issues and practices are organized.</li>
+                <li> academic activities for faculty members and students are organized in
+                    collaboration with IBM, Google and i-Nurture </li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+  
+                             <div class="footer">
+                                    <a href="https://www.nakul.org/about/">About Us</a>|
+                                    <a href="https://www.nakul.org/privacy-policy/">privacy-policy</a>|
+                                    <a href="https://www.nakul.org/carrers/">careers</a>|
+                                    <p> © Teerthanker Mahaveer University. All Rights Reserved.</p>
+                                </div>
+</body>
+
+</html>
